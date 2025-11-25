@@ -5,7 +5,7 @@ export default function Hero() {
       className="snap-start laptop:snap-none relative min-h-[100svh] md:min-h-[90dvh] laptop:h-screen laptop:w-screen laptop:flex-shrink-0 flex items-center justify-center"
       aria-label="Hero section"
     >
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden bg-black">
         <iframe
           src="https://customer-mp06svfe1n138f7h.cloudflarestream.com/1f294a6d436628c5de70e1b33a04f0e3/iframe?autoplay=true&loop=true&muted=true&controls=false&poster=https%3A%2F%2Fcustomer-mp06svfe1n138f7h.cloudflarestream.com%2F1f294a6d436628c5de70e1b33a04f0e3%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
           loading="eager"
@@ -15,11 +15,10 @@ export default function Hero() {
           style={{
             border: 'none',
             pointerEvents: 'none',
-            width: '100%',
-            height: '100%',
+            width: '177.78vh',
+            height: '56.25vw',
             minWidth: '100%',
-            minHeight: '100%',
-            objectFit: 'cover'
+            minHeight: '100%'
           }}
           title="Hero background video"
         />
