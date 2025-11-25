@@ -35,13 +35,17 @@ export default function Vision({ onVisible }: VisionProps) {
         <iframe
           src="https://customer-mp06svfe1n138f7h.cloudflarestream.com/f92a0b636a17126f1f05dcc4d92ecaa6/iframe?autoplay=true&loop=true&muted=true&controls=false&poster=https%3A%2F%2Fcustomer-mp06svfe1n138f7h.cloudflarestream.com%2Ff92a0b636a17126f1f05dcc4d92ecaa6%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
           loading="lazy"
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full min-w-full min-h-full"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
           allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
           allowFullScreen
           style={{
             border: 'none',
             pointerEvents: 'none',
-            aspectRatio: '16/9'
+            width: '100%',
+            height: '100%',
+            minWidth: '100%',
+            minHeight: '100%',
+            objectFit: 'cover'
           }}
           title="Vision background video"
         />
