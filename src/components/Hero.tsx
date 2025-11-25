@@ -6,22 +6,20 @@ export default function Hero() {
       aria-label="Hero section"
     >
       <div className="absolute inset-0 overflow-hidden bg-black">
-        <iframe
-          src="https://customer-mp06svfe1n138f7h.cloudflarestream.com/1f294a6d436628c5de70e1b33a04f0e3/iframe?autoplay=true&loop=true&muted=true&preload=auto&controls=false&defaultTextTrack=false&poster=https%3A%2F%2Fcustomer-mp06svfe1n138f7h.cloudflarestream.com%2F1f294a6d436628c5de70e1b33a04f0e3%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
-          loading="eager"
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-          allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;"
-          allowFullScreen
-          style={{
-            border: 'none',
-            pointerEvents: 'none',
-            width: '177.78vh',
-            height: '56.25vw',
-            minWidth: '100%',
-            minHeight: '100%'
-          }}
-          title="Hero background video"
-        />
+        <div className="absolute inset-0" style={{ transform: 'scale(1.5)' }}>
+          <iframe
+            src="https://customer-mp06svfe1n138f7h.cloudflarestream.com/1f294a6d436628c5de70e1b33a04f0e3/iframe?autoplay=true&loop=true&muted=true&preload=auto&controls=false&defaultTextTrack=false&poster=https%3A%2F%2Fcustomer-mp06svfe1n138f7h.cloudflarestream.com%2F1f294a6d436628c5de70e1b33a04f0e3%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
+            loading="eager"
+            className="absolute inset-0 w-full h-full"
+            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;"
+            allowFullScreen
+            style={{
+              border: 'none',
+              pointerEvents: 'none'
+            }}
+            title="Hero background video"
+          />
+        </div>
       </div>
 
       <div className="absolute top-2 left-1/2 -translate-x-1/2 z-20 sm:hidden">

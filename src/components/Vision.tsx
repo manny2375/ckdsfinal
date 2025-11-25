@@ -32,22 +32,20 @@ export default function Vision({ onVisible }: VisionProps) {
       aria-label="Our vision"
     >
       <div className="absolute inset-0 overflow-hidden bg-black">
-        <iframe
-          src="https://customer-mp06svfe1n138f7h.cloudflarestream.com/f92a0b636a17126f1f05dcc4d92ecaa6/iframe?autoplay=true&loop=true&muted=true&preload=auto&controls=false&defaultTextTrack=false&poster=https%3A%2F%2Fcustomer-mp06svfe1n138f7h.cloudflarestream.com%2Ff92a0b636a17126f1f05dcc4d92ecaa6%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
-          loading="lazy"
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-          allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;"
-          allowFullScreen
-          style={{
-            border: 'none',
-            pointerEvents: 'none',
-            width: '177.78vh',
-            height: '56.25vw',
-            minWidth: '100%',
-            minHeight: '100%'
-          }}
-          title="Vision background video"
-        />
+        <div className="absolute inset-0" style={{ transform: 'scale(1.5)' }}>
+          <iframe
+            src="https://customer-mp06svfe1n138f7h.cloudflarestream.com/f92a0b636a17126f1f05dcc4d92ecaa6/iframe?autoplay=true&loop=true&muted=true&preload=auto&controls=false&defaultTextTrack=false&poster=https%3A%2F%2Fcustomer-mp06svfe1n138f7h.cloudflarestream.com%2Ff92a0b636a17126f1f05dcc4d92ecaa6%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
+            loading="lazy"
+            className="absolute inset-0 w-full h-full"
+            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;"
+            allowFullScreen
+            style={{
+              border: 'none',
+              pointerEvents: 'none'
+            }}
+            title="Vision background video"
+          />
+        </div>
       </div>
       <div className="relative z-10 w-full max-w-4xl mx-auto px-4 sm:px-6 md:px-8 laptop:px-10 desktop:px-12 text-center py-8 sm:py-0">
         <p className="text-base sm:text-lg laptop:text-lg desktop:text-xl leading-relaxed" style={{ color: '#D6D1C7' }}>
