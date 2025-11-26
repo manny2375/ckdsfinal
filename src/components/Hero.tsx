@@ -1,4 +1,7 @@
+import useIsDesktopLike from '../hooks/useIsDesktopLike';
+
 export default function Hero() {
+  const isDesktopLike = useIsDesktopLike();
   return (
     <section
       id="hero"
@@ -18,8 +21,8 @@ export default function Hero() {
             left: '50%',
             top: '50%',
             transform: 'translate(-50%, -50%)',
-            width: '500%',
-            height: '500%'
+            width: isDesktopLike ? '175%' : '500%',
+            height: isDesktopLike ? '175%' : '500%'
           }}
           title="Hero background video"
         />

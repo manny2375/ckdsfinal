@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import useIsDesktopLike from '../hooks/useIsDesktopLike';
 
 interface VisionProps {
   onVisible: () => void;
@@ -6,6 +7,7 @@ interface VisionProps {
 
 export default function Vision({ onVisible }: VisionProps) {
   const sectionRef = useRef<HTMLElement>(null);
+  const isDesktopLike = useIsDesktopLike();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -44,8 +46,8 @@ export default function Vision({ onVisible }: VisionProps) {
             left: '50%',
             top: '50%',
             transform: 'translate(-50%, -50%)',
-            width: '500%',
-            height: '500%'
+            width: isDesktopLike ? '175%' : '500%',
+            height: isDesktopLike ? '175%' : '500%'
           }}
           title="Vision background video"
         />
