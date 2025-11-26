@@ -44,8 +44,8 @@ export default function Vision({ onVisible }: VisionProps) {
             left: '50%',
             top: '50%',
             transform: 'translate(-50%, -50%)',
-            width: '300%',
-            height: '300%'
+            width: '500%',
+            height: '500%'
           }}
           title="Vision background video"
         />
